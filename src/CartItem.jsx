@@ -34,6 +34,7 @@ const CartItem = ({ onContinueShopping }) => {
   };
 
   const handleDecrement = (item) => {
+    console.log(item.quantity);
     if (item.quantity > 1) {
         dispatch(
           updateQuantity({ name: item.name, quantity: item.quantity - 1 })
